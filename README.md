@@ -1,3 +1,5 @@
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+
 # pwa-music-player
 
 pwa-music-player is a fine-tuned version of [PWAmp](https://microsoftedge.github.io/Demos/pwamp/), serving as a progressive web application (PWA) audio player. This installable web app demonstrates various desktop integration features, allowing users to:
