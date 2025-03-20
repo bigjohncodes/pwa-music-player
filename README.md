@@ -1,4 +1,4 @@
-# pwa-music-player is a funetuned version of PWAmp app on 
+# pwa-music-player is a finetuned version of PWAmp app on 
 ➡️ **[Open the demo](https://microsoftedge.github.io/Demos/pwamp/)** ⬅️
 
 pwa-music-player is a web audio player demo application. It is an installable web app (PWA) specifically made to demonstrate progressive web application.
