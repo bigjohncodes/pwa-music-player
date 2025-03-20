@@ -1,37 +1,62 @@
-# pwa-music-player is a finetuned version of PWAmp app on 
-➡️ **[Open the demo](https://microsoftedge.github.io/Demos/pwamp/)** ⬅️
+# pwa-music-player
 
-pwa-music-player is a web audio player demo application. It is an installable web app (PWA) specifically made to demonstrate progressive web application.
+pwa-music-player is a fine-tuned version of [PWAmp](https://microsoftedge.github.io/Demos/pwamp/), serving as a progressive web application (PWA) audio player. This installable web app demonstrates various desktop integration features, allowing users to:
 
-![Screenshot of the pwa-music-player app](screenshot-playlist.png)
+- Add songs  
+- Edit song information  
+- Apply custom skins  
+- Record audio clips  
+- Utilize native file handling  
+- And more  
 
+## Features
 
-    [Example song link](web+amp:remote-song:ia803003.us.archive.org/17/items/78_by-the-light-of-the-silvery-moon_fats-waller-and-his-rhythm-fats-waller-the-dee_gbia0153541a/BY%20THE%20LIGHT%20OF%20THE%20SILVERY%20-%20%22Fats%22%20Waller%20and%20his%20Rhythm.mp3)
-  
-## Making a new skin
+- **Song Management** – Add and edit song details.  
+- **Customization** – Apply custom skins to personalize the player.  
+- **Audio Recording** – Record and manage audio clips within the app.  
+- **Native Integration** – Supports native file handling for a seamless experience.  
 
-A skin is a CSS file that gets applied to the app, replacing the default CSS.
+## Installation
 
-The best way to make a new skin is to open DevTools and look at the HTML structure of the page. Most elements should have handy classes and IDs that will make them easy to style.
+To install pwa-music-player:
 
-Skins are expected to have a `:root {}` rule with at least one variable called `--back` set to the color of the background. This will be used at runtime, in JavaScript, by the app to apply the color to the visualizer and the title bar area.
+1. Clone the repository:
 
+   ```bash
+   git clone https://github.com/bigjohncodes/pwa-music-player.git
+   ```
 
-## Song credits
+2. Navigate to the project directory:
 
-The first time you open the app, a few songs are pre-loaded. These are remote URL songs, so they will only play when you are online.
+   ```bash
+   cd pwa-music-player
+   ```
 
-Credits for those songs:
+3. Open `index.html` in your preferred web browser.
 
-* "Reunion", and "Over The Stargates" by David Rousset, used with the author's approval. More information and songs on [soundcloud](https://soundcloud.com/david-rousset).
-* "Opening" and "Aloe-Almond Butter And Space Pesto" by Noi2er, from the [Internet Archive](https://archive.org/details/DWK382).
+For an enhanced experience, install the app as a PWA:
 
-## TODO
+- **On Chrome** – Click the install button in the address bar.  
+- **On Edge** – Navigate to the browser menu and select "Apps" > "Install this site as an app".  
 
-* Make sure the app is accessible in high-contrast mode.
-* Make it possible to download remote songs locally (fetch -> readablestream -> store chunks in IDB. And then fetch handler in SW to serve these chunks back from IDB when offline).
-* Improve song adding performance again: only get duration later, after song has been added.
-* Add the ability to drag/drop songs in the playlist to re-order them.
-* Ability to export as another file format.
-* Use viewport segments to display on dual screen devices.
-* Add repeat and shuffle buttons.
+## Hosting via GitHub Pages
+
+To make pwa-music-player accessible via GitHub Pages:
+
+1. **Enable GitHub Pages**  
+   - Go to your repository on GitHub.  
+   - Click on **Settings**.  
+   - Under **Code and automation**, go to **Pages**.  
+   - In the **Build and deployment** section, choose **Deploy from a branch**.  
+   - Select the `main` branch and set the folder to `/root` or `/docs`.  
+
+2. **Disable Jekyll Processing (Optional)**  
+   - Add a `.nojekyll` file to the root of your publishing source to bypass Jekyll processing.  
+
+3. **Access Your Site**  
+   - Once published, your app will be available at:  
+     ```
+     https://bigjohncodes.github.io/pwa-music-player/
+     ```
+
+For more details, refer to [GitHub Pages Documentation](https://docs.github.com/en/pages).
